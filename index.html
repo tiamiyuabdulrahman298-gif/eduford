@@ -15,6 +15,7 @@
             <a href="index.html"><img src="image/logo.png" alt="University logo"></a>
             <i class="fa fa-bars" onclick="showmenu()"></i>
             <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -171,13 +172,16 @@
         </div>
         <p>Made with <i class="fa fa-heart-o"></i>Easy Tutorials </p>
     </section>
- <a href="kjvdojlorwk[ijro]"><img src="dfopvehniebja"/></a>
+
  
     <!-- Javeascript for Togggle Menu -->
     <script>
         var navlinks = document.getElementById("navlinks");
         function showmenu() {
-            navlinks.style.right = navlinks.style.right === "0px" ? "-200px" : "0";
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
         }
     </script>
 </body>
